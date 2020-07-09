@@ -1,1 +1,2 @@
-v7.2
+[Variables]
+CurrentVersion=7.2
