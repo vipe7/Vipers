@@ -9,5 +9,4 @@ Get-Content -Path C:\Rainmeter\Skins\Vipers\DownloadFile\ChangeLog.txt | Out-Str
 Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
 Remove-Item C:\Rainmeter\Update.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Rainmeter"
-Invoke-Item "C:\Rainmeter\Skins\Vipers\DownloadFile\ChangeLog.txt"
 Pause
