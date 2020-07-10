@@ -2,7 +2,7 @@ New-Item -ItemType "directory" -Path "$env:userprofile\desktop\Vipers-Backup" -F
 Copy-Item -Path "C:\Rainmeter\Skins\Vipers\@Resources\*txt" -Destination "$env:userprofile\desktop\Vipers-Backup"
 Stop-Process -Name "Rainmeter"
 curl -o $env:userprofile\desktop\Install.zip https://github.com/vipe7/Vipers/raw/master/Vipers.zip
-Remove-Item C:\Rainmeter -Force -Recurse
+Remove-Item C:\Rainmeter\* -Force -Recurse
 Expand-Archive -Force $env:userprofile\desktop\Install.zip C:\
 Copy-Item -Path "$env:userprofile\desktop\Vipers-Backup\*txt" -Destination "C:\Rainmeter\Skins\Vipers\@Resources"
 Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
