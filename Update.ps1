@@ -8,5 +8,6 @@ Copy-Item -Path "$env:userprofile\desktop\Vipers-Backup\*txt" -Destination "C:\R
 Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
 Remove-Item $env:userprofile\desktop\Install.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Rainmeter"
+(get-item C:\Rainmeter\Skins\Vipers\@Resources\vipe7.lua).Attributes += 'Hidden'
 Get-Content -Path C:\Rainmeter\Skins\Vipers\DownloadFile\ChangeLog.txt | Out-String
 Pause
