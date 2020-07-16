@@ -3,4 +3,3 @@ Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumID $Ge
 if ($GetID -eq 'NHQ1XEX002703025C37200') {Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumStatusNEW Active"} #ME#
 elseif ($GetID -eq 'NHQ1XEX002703025C37200') {Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumStatusNEW Active"}
 else {Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumStatusNEW NotActive"}
-Pause
