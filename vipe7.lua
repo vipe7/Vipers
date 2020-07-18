@@ -1,5 +1,4 @@
 function Initialize()
-	Loops = SKIN:GetMeasure('MeasureLoop')
 	RecycleBin = SKIN:GetMeasure('mCount')
 	GamingMode3 = SKIN:GetMeasure('HWiNFOFPS')
 	GetBattery = SKIN:GetMeasure('BatteryChecker')
@@ -11,7 +10,6 @@ end -- fun
 
 -- Auto Update START
 function Update()
-	GetLoop = Loops:GetStringValue()
 	GetRecycleBin = RecycleBin:GetStringValue()
 	GetAutoRecycle = SKIN:GetVariable('AutoRecycle')
 	GetGamingMode3 = GamingMode3:GetStringValue()
@@ -27,11 +25,6 @@ function Update()
 	GetSpaceColorMode = SKIN:GetVariable('SpaceColorMode')
 	GetMenuTransparency = MenuTransparency:GetStringValue()
 	GetPremiumCheck = SKIN:GetVariable('zMACAddressTEST')
-
-	if GetLoop  == '181' then
-		SKIN:Bang('!Refresh')
-	else
-	end-- Auto Update END
 
 --Premium Check
 	if GetPremiumCheck == '1005014B4761' then--GetFreePremium == '04'
