@@ -4,7 +4,7 @@ function Initialize()
 	GetBattery = SKIN:GetMeasure('BatteryChecker')
 	GetVer1 = SKIN:GetVariable('CurrentVersion')
 	GetVer2 = SKIN:GetVariable('CurrentInstalledVersionNEW')
---	FreePremium = SKIN:GetMeasure('FreePremium')
+	FreePremium = SKIN:GetMeasure('FreePremium')
 	MenuTransparency = SKIN:GetMeasure('TransparencyCalc')
 end -- fun
 
@@ -20,7 +20,7 @@ function Update()
 	GetAutoColor = SKIN:GetVariable('MenuColor')
 	GetAutoBatteryValue = SKIN:GetVariable('AutoBattery')
 	GetBattery2 = GetBattery:GetStringValue()
---	GetFreePremium = FreePremium:GetStringValue()
+	GetFreePremium = FreePremium:GetStringValue()
 	GetPremiumStatus2 = SKIN:GetVariable('PremiumStatus2')
 	GetSpaceColorMode = SKIN:GetVariable('SpaceColorMode')
 	GetMenuTransparency = MenuTransparency:GetStringValue()
@@ -35,20 +35,20 @@ function Update()
 		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
 		SKIN:Bang('!SetVariable AdminActionMore "!SkinMenu"')--RightClick
 		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
-	elseif GetPremiumCheck == '94E979744B09' then--Sasho
+	elseif GetPremiumCheck == '94E979744B09' or GetFreePremium == '08' then--Sasho
 		SKIN:Bang('!SetVariable PremiumStatus "Active"')
 		SKIN:Bang('!SetVariable PremiumStatus2 "Active"')
 		SKIN:Bang('!SetOption PremiumText01 FontColor 00FF00FF')
 		SKIN:Bang('!SetOption ExtensionsText2 FontColor 00FF00FF')
 		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
 		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
-	elseif GetPremiumCheck == 'FC4596A885FC' then--iPaxii
-		SKIN:Bang('!SetVariable PremiumStatus "Active"')
-		SKIN:Bang('!SetVariable PremiumStatus2 "Active"')
-		SKIN:Bang('!SetOption PremiumText01 FontColor 00FF00FF')
-		SKIN:Bang('!SetOption ExtensionsText2 FontColor 00FF00FF')
-		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
-		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
+--	elseif GetPremiumCheck == 'FC4596A885FC' then--iPaxii
+--		SKIN:Bang('!SetVariable PremiumStatus "Active"')
+--		SKIN:Bang('!SetVariable PremiumStatus2 "Active"')
+--		SKIN:Bang('!SetOption PremiumText01 FontColor 00FF00FF')
+--		SKIN:Bang('!SetOption ExtensionsText2 FontColor 00FF00FF')
+--		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
+--		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
 	else
 		SKIN:Bang('!SetVariable PremiumStatus "Not Active"')
 		SKIN:Bang('!SetVariable PremiumStatus2 "Become a Premium"')
