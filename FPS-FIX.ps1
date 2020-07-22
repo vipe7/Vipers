@@ -1,0 +1,1 @@
+ Set-ScheduledTask -TaskName "\HWiNFO" -Trigger (New-JobTrigger -AtLogOn -RandomDelay (new-Timespan -Seconds 15))
