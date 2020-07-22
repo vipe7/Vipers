@@ -6,9 +6,9 @@ function Show-Menu
     Clear-Host
     Write-Host "================ $Title ================"
 
-    Write-Host "Press '1' for reinstalling (you won't loose your settings)"
+    Write-Host "Press '1' for Repair"
     Write-Host "Press '2' for FPS-FIX"
-    Write-Host "Press 'Q' to quit."
+    Write-Host "Press 'Q' to Quit."
 }
 
 do
