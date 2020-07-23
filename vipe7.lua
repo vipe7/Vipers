@@ -42,13 +42,6 @@ function Update()
 		SKIN:Bang('!SetOption ExtensionsText2 FontColor 00FF00FF')
 		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
 		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
-	elseif GetPremiumCheck == 'FC4596A885FC' then--iPaxii
-		SKIN:Bang('!SetVariable PremiumStatus "Active"')
-		SKIN:Bang('!SetVariable PremiumStatus2 "Active"')
-		SKIN:Bang('!SetOption PremiumText01 FontColor 00FF00FF')
-		SKIN:Bang('!SetOption ExtensionsText2 FontColor 00FF00FF')
-		SKIN:Bang('!SetVariable AdminActionVipers "#ROOTCONFIGPATH#"')--RightClick
-		SKIN:Bang('!SetOption SystemLINE SolidColor #SpaceColor#')--Space Color
 	elseif  GetFreePremium == '07' or GetFreePremium == '08' then
 		SKIN:Bang('!SetVariable PremiumStatus "Active"')
 		SKIN:Bang('!SetVariable PremiumStatus2 "Active"')
