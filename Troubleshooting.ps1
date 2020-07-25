@@ -5,15 +5,17 @@ function Show-Menu
     )
     Clear-Host
     Write-Host "================ $Title ================"
-
     Write-Host "Press '1' for Repair"
     Write-Host "Press '2' for FPS-FIX (Restart required)"
-    Write-Host "Press '3' for Fraps Configuration Guide (Under Construction)"
-    Write-Host "Press '4' for HWiNFO Configuration Guide (Under Construction)"
-    Write-Host "Press '5' for qBitTorrent Configuration Guide (Under Construction)"
-    Write-Host "Press '6' for WebNowPlaying Configuration Guide"
+    Write-Host ""
+    Write-Host "================ Configuration  Guides ================"
+    Write-Host "Press '3' for Fraps (Under Construction)"
+    Write-Host "Press '4' for HWiNFO (Under Construction)"
+    Write-Host "Press '5' for qBitTorrent (Under Construction)"
+    Write-Host "Press '6' for WebNowPlaying"
+    Write-Host ""
     Write-Host "Press 'R' to Restart Computer"
-    Write-Host "Press 'Q' to Quit."
+    Write-Host "Press 'Q' to Quit`n"
 }
 
 do
