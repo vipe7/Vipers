@@ -26,6 +26,9 @@ do
      {
          '1' { Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/vipe7/Vipers/master/Update.ps1')) } 
          '2' { Start-Process "C:\Rainmeter\FPS-FIX" }
+         '3' { 'Guide is Under Construction' }
+         '4' { 'Guide is Under Construction' }
+         '5' { 'Guide is Under Construction' }
 	 '6' { Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/vipe7/Vipers/master/WebNowPlaying.ps1')) }
          'r' { Restart-Computer }
          'q' { Exit }
