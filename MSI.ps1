@@ -1,4 +1,4 @@
-Write-Host "Vipers Installer`n`n`n`n`n`n`n"
+Write-Host "Vipers Installer`n`n`n`n`n`n"
 Write-Host "Downloading MSI Afterburner & RTSS...`n"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/vipe7/Vipers/master/MSI.exe" -OutFile "$env:userprofile\desktop\MSI.exe"
 Write-Host "MSI Afterburner & RTSS downloaded`n"
