@@ -10,6 +10,7 @@ Remove-Item "$env:userprofile\desktop\MSI.exe"
 Remove-Item "$env:userprofile\desktop\MSI Afterburner.lnk"
 Write-Host "Downloaded files removed`n"
 Write-Host "Starting MSI Afterburner & RTSS...`n"
+Start-Process -FilePath "MSIAfterburner.exe" -WorkingDirectory "C:\Program Files (x86)\MSI Afterburner"
 Start-Process -FilePath "RTSS.exe" -WorkingDirectory "C:\Program Files (x86)\RivaTuner Statistics Server"
 Write-Host "ALL DONE`nPlease make MSI Afterburner and RTSS to start with Windows`nCheck step 2) Setting up MSI & TRSS"
 Pause
