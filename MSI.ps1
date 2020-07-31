@@ -4,7 +4,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/vipe7/Vipers/master/MS
 Write-Host "MSIAfterburner & RTSS downloaded`n"
 Write-Host "Installing MSIAfterburner & RTSS...`n"
 Start-Process -Wait -FilePath $env:userprofile\desktop\MSI.exe -ArgumentList '/S','/v','/qn' -passthru
-Write-Host "MSIAfterburner & RTSS installed`n"
+Write-Host "`nMSIAfterburner & RTSS installed`n"
 Write-Host "Removing downloaded files...`n"
 Remove-Item "$env:userprofile\desktop\MSI.exe"
 Remove-Item "$env:userprofile\desktop\MSI Afterburner.lnk"
