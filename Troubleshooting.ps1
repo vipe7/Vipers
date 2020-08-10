@@ -28,7 +28,7 @@ Get-Content -Path C:\Rainmeter\Skins\Vipers\DownloadFile\ChangeLog.txt | Out-Str
 Pause
 Exit } 
          '2' { New-Item -ItemType "directory" -Path "$env:userprofile\desktop\Vipers-Backup" -Force | Out-Null
-Copy-Item -Path "C:\Rainmeter\Skins\Vipers\@Resources\*txt" -Destination "$env:userprofile\desktop\Vipers-Backup"
+Copy-Item -Path "C:\Rainmeter\Skins\Vipers\@Resources\Settings.txt" -Destination "$env:userprofile\desktop\Vipers-Backup"
 Stop-Process -Name "Rainmeter"
 curl -o $env:userprofile\desktop\Install.zip https://github.com/vipe7/Vipers/raw/master/Vipers.zip
 Remove-Item C:\Rainmeter\* -Force -Recurse
