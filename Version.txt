@@ -1,2 +1,2 @@
 [Variables]
-CurrentVersion=7.2.11
+CurrentVersion=Close Beta - 0.8.0.0 (From: 23.01.2021)
