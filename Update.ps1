@@ -9,4 +9,8 @@ Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
 Remove-Item $env:userprofile\desktop\Install.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Rainmeter"
 (get-item C:\Rainmeter\Skins\Vipers\@Resources\vipe7.lua).Attributes += 'Hidden'
+$objShell = New-Object -ComObject ("WScript.Shell")
+$objShortCut = $objShell.CreateShortcut($env:USERPROFILE + "\Start Menu\Programs\Startup" + "\Vipers.lnk")
+$objShortCut.TargetPath="C:\Rainmeter\Rainmeter.exe"
+$objShortCut.Save()
 Pause
