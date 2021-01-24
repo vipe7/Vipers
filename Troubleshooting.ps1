@@ -23,7 +23,6 @@ Expand-Archive -Force $env:userprofile\desktop\Install.zip C:\
 Remove-Item $env:userprofile\desktop\Install.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Rainmeter"
 (get-item C:\Rainmeter\Skins\Vipers\@Resources\vipe7.lua).Attributes += 'Hidden'
-(get-item C:\Rainmeter\Checker.exe).Attributes += 'Hidden'
 Write-Host "`nReinstall DONE!"
 Pause
 Exit } 
@@ -38,7 +37,6 @@ Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
 Remove-Item $env:userprofile\desktop\Install.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Rainmeter"
 (get-item C:\Rainmeter\Skins\Vipers\@Resources\vipe7.lua).Attributes += 'Hidden'
-(get-item C:\Rainmeter\Checker.exe).Attributes += 'Hidden'
 Write-Host "`nRepair DONE!"
 Pause
 Exit }
