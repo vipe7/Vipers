@@ -13,5 +13,5 @@ $objShell = New-Object -ComObject ("WScript.Shell")
 $objShortCut = $objShell.CreateShortcut($env:USERPROFILE + "\Start Menu\Programs\Startup" + "\Vipers.lnk")
 $objShortCut.TargetPath="C:\Rainmeter\Rainmeter.exe"
 $objShortCut.Save()
-Write-Host "Vipers is now Updated/Installed`n"
+Write-Host "Vipers is now Updated`n"
 Pause
