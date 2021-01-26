@@ -1,3 +1,3 @@
 [Variables]
-CurrentVersion=v0.8.0.4
-WhatsNew=+ Notifications panel added on right#CRLF#+ Gmail, WebNowPlaying, qBitTorrent, Updates are under Notifications panel#CRLF#+ New Update Method#CRLF#+ Bugfixes#CRLF##CRLF#What was new on 0.8.0.1 - 0.8.0.3#CRLF#+ Bugfixes only#CRLF##CRLF#What was new on 0.8.0.0#CRLF#+ New design#CRLF#+ Performance improvements#CRLF#+ Gmail, qBitTorrent, WebNowPlaying rewritten as Extensions (now you can turn them ON and OFF)#CRLF#+ HWiNFO Configurator FIX#CRLF#+ Modern Clock - Weather FIX#CRLF#+ Settings menu optimization#CRLF#- Settings menu optimization#CRLF#- MSI Afterburner no longer supported
+CurrentVersion=v0.8.0.5
+WhatsNew=+ SSD 2 Support (Auto detect)
