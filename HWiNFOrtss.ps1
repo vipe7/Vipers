@@ -1,0 +1,6 @@
+Stop-Process -Name "RTSS"
+Stop-Process -Name "HWiNFO64"
+Copy-Item -Path "C:\Rainmeter\Plugins\Config" -Destination "C:\Program Files (x86)\RivaTuner Statistics Server\Profiles"
+Copy-Item -Path "C:\Rainmeter\Plugins\HWiNFO64.INI" -Destination "C:\Program Files\HWiNFO64"
+Start-Process -FilePath "RTSS.exe" -WorkingDirectory "C:\Program Files (x86)\RivaTuner Statistics Server"
+Start-Process -FilePath "HWiNFO64.EXE" -WorkingDirectory "C:\Program Files\HWiNFO64"
