@@ -5,8 +5,8 @@ function Show-Menu
     )
     Clear-Host
     Write-Host "================ $Title ================"
-    Write-Host "Press '1' for Reinstall (Settings file will reset)"
-    Write-Host "Press '2' for Repair (Settings file will be kept)"
+    Write-Host "Press '1' for Reinstall (Settings files will reset)"
+    Write-Host "Press '2' for Repair (Settings files will be kept)"
     Write-Host "Press 'Q' to Quit`n"
 }
 
