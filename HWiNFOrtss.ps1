@@ -15,4 +15,4 @@ $15 = New-ScheduledTask -Action $11 -Principal $13 -Trigger $12 -Settings $14
 Register-ScheduledTask RTSS -InputObject $15
 Set-ScheduledTask -TaskName "\HWiNFO" -Trigger (New-JobTrigger -AtLogOn -RandomDelay (new-Timespan -Seconds 15))
 Start-Process -FilePath "RTSS.exe" -WorkingDirectory "C:\Program Files (x86)\RivaTuner Statistics Server"
-Start-Process -FilePath "HWiNFO64.EXE" -WorkingDirectory "C:\Rainmeter\Plugins\HWiNFO64\HWiNFO64"
+Start-Process -FilePath "HWiNFO64.EXE" -WorkingDirectory "C:\Rainmeter\Plugins\HWiNFO64"
