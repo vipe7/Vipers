@@ -1,8 +1,7 @@
 Stop-Process -Name "RTSS"
 Stop-Process -Name "HWiNFO64"
 Copy-Item -Path "C:\Rainmeter\Plugins\Config" -Destination "C:\Program Files (x86)\RivaTuner Statistics Server\Profiles"
-Copy-Item -Path "C:\Rainmeter\Plugins\HWiNFO64.INI" -Destination "C:\Program Files\HWiNFO64"
-$1 = New-ScheduledTaskAction -Execute "C:\Program Files\HWiNFO64\HWiNFO64.EXE"
+$1 = New-ScheduledTaskAction -Execute "C:\Rainmeter\Plugins\HWiNFO64\HWiNFO64.EXE"
 $2 = New-ScheduledTaskTrigger -AtLogOn
 $3 = New-ScheduledTaskPrincipal -GroupId "BUILTIN\Users" -RunLevel Highest
 $4 = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -DontStopOnIdleEnd -ExecutionTimeLimit 0
