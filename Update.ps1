@@ -1,3 +1,4 @@
+Stop-Process -Name "HWiNFO64"
 New-Item -ItemType "directory" -Path "$env:userprofile\desktop\Vipers-Backup" -Force | Out-Null
 Copy-Item -Path "C:\Rainmeter\Skins\Vipers\@Resources\*txt" -Destination "$env:userprofile\desktop\Vipers-Backup"
 Copy-Item -Path "C:\Rainmeter\Rainmeter.ini" -Destination "$env:userprofile\desktop\Vipers-Backup"
@@ -15,5 +16,6 @@ $objShell = New-Object -ComObject ("WScript.Shell")
 $objShortCut = $objShell.CreateShortcut($env:USERPROFILE + "\Start Menu\Programs\Startup" + "\Vipers.lnk")
 $objShortCut.TargetPath="C:\Rainmeter\Rainmeter.exe"
 $objShortCut.Save()
+Start-Process -FilePath "HWiNFO64.EXE" -WorkingDirectory "C:\Rainmeter\Plugins\HWiNFO"
 Write-Host "Vipers is now Updated`n"
 Pause
