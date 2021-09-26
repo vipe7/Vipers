@@ -1,3 +1,3 @@
 [Variables]
-CurrentVersion=v0.8.2.0
-WhatsNew=+ 3 new Color Themes#CRLF#+ Gaming Mode Position (beta)#CRLF#Now you can configure Gaming Mode in 6 different positions#CRLF#+ qBitTorrent Updated#CRLF#AutoScale in downloading speed added#CRLF#(kB/s becoming MB/s when certain speed reaches)#CRLF#+ "New Style Clock" 1st try FIX#CRLF#+ Some small bugfixes in coding#CRLF#+ Update method code update
+CurrentVersion=v0.8.2.1
+WhatsNew=+ Settings Menu Update#CRLF#+ New Style Clock FIX#CRLF#(no more moves when am/pm changes)
