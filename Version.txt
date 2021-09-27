@@ -1,3 +1,3 @@
 [Variables]
-CurrentVersion=v0.8.2.1
-WhatsNew=+ Settings Menu Update#CRLF#+ New Style Clock FIX#CRLF#(no more moves when am/pm changes)#CRLF#+ Base Up
+CurrentVersion=v0.8.2.2
+WhatsNew=+ Settings Menu Update#CRLF#+ New Style Clock Weather icons update#CRLF#+ Bugfixes
