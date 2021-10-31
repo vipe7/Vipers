@@ -4,7 +4,7 @@ Copy-Item -Path "$env:userprofile\Documents\Rainmeter\Skins\Vipers\@Resources\*t
 curl -o "$env:userprofile\desktop\Vipers.zip" "https://github.com/vipe7/Vipers/raw/master/VipersNEW.zip"
 Remove-Item "$env:userprofile\Documents\Rainmeter\Skins\Vipers\*" -Force -Recurse
 Expand-Archive -Force "$env:userprofile\desktop\Vipers.zip" "$env:userprofile\Documents\Rainmeter\Skins"
-Copy-Item -Path "C:\Vipers-Backup\*txt" -Destination "$env:userprofile\Documents\Rainmeter\Skins\Vipers\@Resources"
+Copy-Item -Path "$env:userprofile\desktop\Vipers-Backup\*txt" -Destination "$env:userprofile\Documents\Rainmeter\Skins\Vipers\@Resources"
 Remove-Item $env:userprofile\desktop\Vipers-Backup -Force -Recurse
 Remove-Item $env:userprofile\desktop\Vipers.zip -Force -Recurse
 Start-Process -FilePath "Rainmeter.exe" -WorkingDirectory "C:\Program Files\Rainmeter"
