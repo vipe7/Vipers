@@ -8,6 +8,7 @@ Copy-Item -Path "C:\Rainmeter\Skins\Vipers\@Resources\Settings.txt" -Destination
 Remove-Item C:\Rainmeter -Force -Recurse
 curl -o $env:userprofile\desktop\Rainmeter-4.5.4.exe https://builds.rainmeter.net/Rainmeter-4.5.4.exe
 while ((get-process -name Rainmeter -ErrorAction SilentlyContinue).count -eq 0){}
+Start-Sleep -s 3
 Stop-Process -Name "Rainmeter"
 Remove-Item $env:userprofile\Documents\Rainmeter\Skins\illustro -Force -Recurse
 curl -o "$env:userprofile\desktop\Vipers.rmskin" "https://github.com/vipe7/Vipers/raw/master/Vipers.rmskin"
