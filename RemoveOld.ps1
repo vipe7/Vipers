@@ -14,4 +14,5 @@ Stop-Process -Name "Rainmeter"
 Remove-Item $env:userprofile\Documents\Rainmeter\Skins\illustro -Force -Recurse
 curl -o "$env:userprofile\desktop\Vipers.rmskin" "https://github.com/vipe7/Vipers/raw/master/Vipers.rmskin"
 Invoke-Item "$env:userprofile\desktop\Vipers.rmskin"
-
+while ((get-process -name Rainmeter -ErrorAction SilentlyContinue).count -eq 0){}
+Copy-Item -Path "$env:userprofile\desktop\Vipers-Backup\*txt" -Destination "$env:userprofile\Documents\Rainmeter\Skins\Vipers\@Resources"
