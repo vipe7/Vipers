@@ -16,3 +16,5 @@ curl -o "$env:userprofile\desktop\Vipers.rmskin" "https://github.com/vipe7/Viper
 Invoke-Item "$env:userprofile\desktop\Vipers.rmskin"
 while ((get-process -name Rainmeter -ErrorAction SilentlyContinue).count -eq 0){}
 Copy-Item -Path "$env:userprofile\desktop\Vipers-Backup\*txt" -Destination "$env:userprofile\Documents\Rainmeter\Skins\Vipers\@Resources"
+Remove-Item "$env:userprofile\desktop\Rainmeter-4.5.4.exe" -Force -Recurse
+Remove-Item "$env:userprofile\desktop\Vipers-Backup" -Force -Recurse
