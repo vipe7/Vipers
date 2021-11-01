@@ -1,3 +1,3 @@
 [Variables]
-CurrentVersion=v0.8.2.3
-WhatsNew=+ Base Up
+CurrentVersion=v0.9.0
+WhatsNew=+ First BETA before official release on 01.12.2021
